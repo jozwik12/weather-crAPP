@@ -1,8 +1,8 @@
-import React from 'react';
-import logo from '../logo.svg';
-import './App.css';
+import React from 'react'
+import logo from '../logo.svg'
+import './App.css'
 
-function App(): any {
+function App (): any {
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +15,7 @@ function App(): any {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
