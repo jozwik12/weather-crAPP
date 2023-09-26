@@ -2,7 +2,8 @@ import React from 'react'
 import logo from '../logo.svg'
 import './App.css'
 
-function App (): any {
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+function App () {
   return (
     <div className="App">
       <header className="App-header">
