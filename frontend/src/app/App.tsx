@@ -4,22 +4,28 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
+import AppRoot from '../components/AppRoot'
 import pages from '../pages/pagesConfig'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function App () {
   const router = createBrowserRouter([
     {
-      path: '/',
-      element: pages.HomePage()
-    },
-    {
-      path: '/weatherDetails',
-      element: pages.WeatherDetailsPage()
-    },
-    {
-      path: '/about',
-      element: pages.AboutPage()
+      element: <AppRoot />,
+      children: [
+        {
+          path: '/',
+          element: pages.HomePage()
+        },
+        {
+          path: '/weatherDetails',
+          element: pages.WeatherDetailsPage()
+        },
+        {
+          path: '/about',
+          element: pages.AboutPage()
+        }
+      ]
     }
   ])
 
