@@ -15,7 +15,7 @@
         "react"
     ],
     "rules": {
-        "no-console": "error",
+        "no-console": "warn",
         "indent": ["error", 2],
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "warn",
