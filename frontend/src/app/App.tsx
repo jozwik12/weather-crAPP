@@ -5,24 +5,25 @@ import {
   RouterProvider
 } from 'react-router-dom'
 import AppRoot from '../components/AppRoot'
-import pages from '../pages/pagesConfig'
+import { paths, pages } from '../pages/pagesConfig'
 
 function App (): JSX.Element {
   const router = createBrowserRouter([
     {
+      path: '/',
       element: <AppRoot />,
       errorElement: pages.ErrorPage(),
       children: [
         {
-          path: '/',
+          path: paths.homePagePath,
           element: pages.HomePage()
         },
         {
-          path: '/weatherDetails',
+          path: paths.weatherDetailsPagePath,
           element: pages.WeatherDetailsPage()
         },
         {
-          path: '/about',
+          path: paths.aboutPage,
           element: pages.AboutPage()
         }
       ]

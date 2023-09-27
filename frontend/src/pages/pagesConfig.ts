@@ -3,11 +3,20 @@ import WeatherDetailsPage from '../pages/WeatherDetailsPage'
 import AboutPage from '../pages/AboutPage'
 import ErrorPage from './ErrorPage'
 
-export const pages = {
+const paths = {
+  homePagePath: '/',
+  weatherDetailsPagePath: '/weatherDetails',
+  aboutPage: '/about'
+}
+
+const pages = {
   HomePage,
   WeatherDetailsPage,
   AboutPage,
   ErrorPage
 }
 
-export default pages
+export {
+  paths,
+  pages
+}
