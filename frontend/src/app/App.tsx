@@ -11,6 +11,7 @@ function App (): JSX.Element {
   const router = createBrowserRouter([
     {
       element: <AppRoot />,
+      errorElement: pages.ErrorPage(),
       children: [
         {
           path: '/',
