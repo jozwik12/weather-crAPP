@@ -7,8 +7,7 @@ import {
 import AppRoot from '../components/AppRoot'
 import pages from '../pages/pagesConfig'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-function App () {
+function App (): JSX.Element {
   const router = createBrowserRouter([
     {
       element: <AppRoot />,
