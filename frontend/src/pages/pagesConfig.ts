@@ -4,19 +4,15 @@ import AboutPage from '../pages/AboutPage'
 import ErrorPage from './ErrorPage'
 
 const paths = {
-  homePagePath: '/',
+  homePagePath: '/home',
   weatherDetailsPagePath: '/weatherDetails',
   aboutPage: '/about'
 }
 
-const pages = {
+export {
+  paths,
   HomePage,
   WeatherDetailsPage,
   AboutPage,
   ErrorPage
-}
-
-export {
-  paths,
-  pages
 }
