@@ -4,24 +4,22 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import HomePage from '../pages/HomePage'
-import WeatherDetailsPage from '../pages/WeatherDetailsPage'
-import AboutPage from '../pages/AboutPage'
+import pages from '../pages/pagesConfig'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 function App () {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: HomePage()
+      element: pages.HomePage()
     },
     {
       path: '/weatherDetails',
-      element: WeatherDetailsPage()
+      element: pages.WeatherDetailsPage()
     },
     {
       path: '/about',
-      element: AboutPage()
+      element: pages.AboutPage()
     }
   ])
 
