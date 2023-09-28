@@ -7,7 +7,7 @@ import {
 import AppRoot from '../components/AppRoot'
 import * as Pages from '../pages/pagesConfig'
 
-function App (): JSX.Element {
+function App (): React.ReactNode {
   const router = createBrowserRouter([
     {
       element: <AppRoot />,

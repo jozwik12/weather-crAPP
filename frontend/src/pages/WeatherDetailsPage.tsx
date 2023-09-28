@@ -1,7 +1,6 @@
 import React from 'react'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-function WeatherDetailsPage () {
+function WeatherDetailsPage (): React.ReactNode {
   return (
     <div>
       <h1>WeatherDetailsPage</h1>

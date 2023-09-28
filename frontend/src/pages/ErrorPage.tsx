@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useRouteError } from 'react-router-dom'
 import { paths } from './pagesConfig'
 
-function ErrorPage (): JSX.Element {
+function ErrorPage (): React.ReactNode {
   const error: any = useRouteError()
   return (
     <div>

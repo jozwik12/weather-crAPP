@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { paths } from '../pages/pagesConfig'
 
-function NavigationBar (): JSX.Element {
+function NavigationBar (): React.ReactNode {
   return (
     <div>
       <Link to={paths.homePagePath}>Home Page</Link>

@@ -1,8 +1,7 @@
 import React from 'react'
 import logo from '../assets/mock_title_icon.png'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-function HomePage () {
+function HomePage (): React.ReactNode {
   return (
     <div className="main-container">
       <h1>Homepage title</h1>

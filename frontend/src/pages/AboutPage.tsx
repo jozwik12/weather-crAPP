@@ -1,7 +1,6 @@
 import React from 'react'
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-function AboutPage () {
+function AboutPage (): React.ReactNode {
   return (
     <div>
       <h1>AboutPage</h1>
