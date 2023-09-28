@@ -10,10 +10,13 @@ import * as Pages from '../pages/pagesConfig'
 function App (): JSX.Element {
   const router = createBrowserRouter([
     {
-      path: '/',
       element: <AppRoot />,
       errorElement: <Pages.ErrorPage />,
       children: [
+        {
+          path: Pages.paths.initPagePath,
+          element: <Pages.InitPage />
+        },
         {
           path: Pages.paths.homePagePath,
           element: <Pages.HomePage />
