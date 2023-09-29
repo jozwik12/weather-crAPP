@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom'
 import AppRoot from '../components/AppRoot'
 import * as Pages from '../pages/pagesConfig'
+import { Provider } from 'react-redux'
+import store from './store'
 
 function App (): React.ReactNode {
   const router = createBrowserRouter([
@@ -33,7 +35,11 @@ function App (): React.ReactNode {
     }
   ])
 
-  return <RouterProvider router={router} />
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  )
 }
 
 export default App
