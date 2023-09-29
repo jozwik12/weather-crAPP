@@ -4,7 +4,9 @@ import WeatherDetailsPage from '../pages/WeatherDetailsPage'
 import AboutPage from '../pages/AboutPage'
 import ErrorPage from './ErrorPage'
 
-const paths = {
+type PathsType = Record<string, string>
+
+const paths: PathsType = {
   initPagePath: '/',
   homePagePath: '/home',
   weatherDetailsPagePath: '/weatherDetails',
