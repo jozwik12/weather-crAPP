@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/mock_title_icon.png'
+import '../styles/HomePage.scss'
 
 function HomePage (): React.ReactNode {
   return (
